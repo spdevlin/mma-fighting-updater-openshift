@@ -46,7 +46,7 @@ HREF_XPATH = 'header/h3/a/@href'
 
 #TODO These two constant may want to be passed in
 NMA_KEY_FILE = "api-key.txt"
-HEADLINE_FILE = "mma-fighting.txt"
+HEADLINE_FILE = "/tmp/mma-fighting.txt"
 
 def main():
     # Enable UTF-8 encoding
