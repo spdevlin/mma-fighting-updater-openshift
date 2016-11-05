@@ -9,4 +9,5 @@
 #           jobs.deny which is checked before jobs.allow (this file).
 #
 chronograph
+cleaner
 
