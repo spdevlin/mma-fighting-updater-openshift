@@ -8,3 +8,6 @@ Simple application used to notify updates to the Mixed Martial Arts website: mma
 
 ## Example Usage (Bash)
 Poll every 30 seconds: `while True; do python mma-fighting-updater.py; sleep 30; done;`
+
+
+rhc ssh pytho
