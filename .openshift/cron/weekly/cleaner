@@ -1,0 +1,3 @@
+#!/bin/bash
+rm /tmp/mma-fighting.txt
+touch /tmp/mma-fighting.txt
