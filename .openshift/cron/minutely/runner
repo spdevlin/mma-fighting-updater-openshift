@@ -1,4 +1,4 @@
 #!/bin/bash
-pwd
-ls
+touch /tmp/mma-fighting.txt
+cd ${OPENSHIFT_REPO_DIR}
 python mma-fighting-updater.py
