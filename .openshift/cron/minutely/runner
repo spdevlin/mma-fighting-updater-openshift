@@ -1,4 +1,5 @@
 #!/bin/bash
 cd ../../../
 pwd
+ls
 python mma-fighting-updater.py
