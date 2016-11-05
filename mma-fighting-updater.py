@@ -45,7 +45,7 @@ DESCRIPTION_XPATH = 'p/text()'
 HREF_XPATH = 'header/h3/a/@href'
 
 #TODO These two constant may want to be passed in
-NMA_KEY_FILE = os.path.expanduser("~/.notify/api-key.txt")
+NMA_KEY_FILE = "api-key.txt"
 HEADLINE_FILE = "/tmp/mma-fighting.txt"
 
 def main():
