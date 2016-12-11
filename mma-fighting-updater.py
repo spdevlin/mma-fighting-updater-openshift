@@ -38,6 +38,7 @@ def recordEntry(notifier, file, title, description, link):
 
 # Constants
 URL = 'http://www.mmafighting.com/latest-news'
+URL_HEADERS = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
 
 BODYS_XPATH = '//div[contains(@class, "m-block__body")]/header/..'
 TITLE_XPATH = 'header/h3/a/text()'
@@ -56,7 +57,7 @@ def main():
     nma = setupNMA(NMA_KEY_FILE)
 
     # Get the page
-    page = requests.get(URL)
+    page = requests.get(URL, headers=URL_HEADERS)
 
     # Form the tree to parse
     tree = html.fromstring(page.content)
