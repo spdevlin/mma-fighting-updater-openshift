@@ -40,10 +40,10 @@ def recordEntry(notifier, file, title, description, link):
 URL = 'http://www.mmafighting.com/latest-news'
 URL_HEADERS = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
 
-BODYS_XPATH = '//div[contains(@class, "m-block__body")]/header/..'
-TITLE_XPATH = 'header/h3/a/text()'
+BODYS_XPATH = '//div[contains(@class, "c-compact-river")]/div[contains(@class, "c-entry-box")]/div'
+TITLE_XPATH = 'h2/a/text()'
 DESCRIPTION_XPATH = 'p/text()'
-HREF_XPATH = 'header/h3/a/@href'
+HREF_XPATH = 'h2/a/@href'
 
 #TODO These two constant may want to be passed in
 NMA_KEY_FILE = "api-key.txt"
